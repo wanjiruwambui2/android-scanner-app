@@ -1,4 +1,4 @@
-package com.learntodroid.androidqrcodescanner;
+package com.learntodroid.ProductAuthentifierApp;
 
 import android.content.Context;
 
