@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Android QR Code Scanner</string>
     <string name="title_activity_maps">Map</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="user_name">User name</string>
+    <string name="email_address">email address</string>
+    <string name="password">password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="forgot_password">forgot password</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="submit">submit</string>
+    <string name="sign_in">Sign in</string>
 </resources>

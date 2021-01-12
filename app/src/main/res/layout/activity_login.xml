@@ -4,62 +4,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4F595E"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <Button
+        android:id="@+id/signInBT"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="@string/sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordEt" />
+
+
+    <EditText
+        android:id="@+id/PasswordEt"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailEt"
+        app:layout_constraintVertical_bias="0.087" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:orientation="vertical">
+    <EditText
+        android:id="@+id/EmailEt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393" />
 
-            <EditText
-                android:id="@+id/EmailEt"
-                android:layout_width="343dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:ems="10"
-                android:hint="email address"
-                android:inputType="textEmailAddress"
-                android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/signUPBT"
+        android:layout_width="95dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/sign_up"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/signInBT"
+        app:layout_constraintStart_toStartOf="@+id/signInBT"
+        app:layout_constraintTop_toBottomOf="@+id/signInBT" />
 
-            <EditText
-                android:id="@+id/PasswordEt"
-                android:layout_width="343dp"
-                android:hint="password"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:ems="10"
-                android:layout_marginTop="20dp"
-                android:inputType="textPassword" />
-            <Button
-                android:id="@+id/signInBT"
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="Sign in"
-                android:layout_marginTop="30dp"/>
-
-            <Button
-                android:id="@+id/signUPBT"
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:text="Sign Up" />
-
-
-            <TextView
-                android:id="@+id/forgotpassword"
-                android:layout_width="wrap_content"
-                android:layout_height="42dp"
-                android:text="forgot password"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center_horizontal"/>
-        </LinearLayout>
-    </LinearLayout>
+    <TextView
+        android:id="@+id/forgotpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/forgot_password"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/signUPBT"
+        app:layout_constraintStart_toStartOf="@+id/signUPBT"
+        app:layout_constraintTop_toBottomOf="@+id/signUPBT" />
 </androidx.constraintlayout.widget.ConstraintLayout>
