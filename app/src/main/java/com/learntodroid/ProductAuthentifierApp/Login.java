@@ -116,7 +116,8 @@ public class Login extends AppCompatActivity {
         if(SignInBT.getText() == "Loading..") return;
         final String email = EmailET.getText().toString().trim();
         final String password = PasswordET.getText().toString().trim();
-
+        Intent scanner = new Intent(getApplicationContext(), QRCodeImageAnalyzer.class);
+        return;
         if (email.isEmpty()) {
             EmailET.setError("Kindly fill This");
             EmailET.setText("");
