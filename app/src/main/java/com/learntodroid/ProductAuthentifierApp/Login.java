@@ -118,7 +118,7 @@ public class Login extends AppCompatActivity {
         final String password = PasswordET.getText().toString().trim();
         Intent scanner = new Intent(getApplicationContext(), QRCodeImageAnalyzer.class);
         return;
-        if (email.isEmpty()) {
+       /* if (email.isEmpty()) {
             EmailET.setError("Kindly fill This");
             EmailET.setText("");
         } else if (password.isEmpty()) {
@@ -184,18 +184,18 @@ public class Login extends AppCompatActivity {
 //                        parseData(response);
 //                    },
             {
-             /*   @Override
+             *//*   @Override
                 protected Map<String, String> getParams() {
                     Map<String, String> params = new HashMap<>();
                     params.put("email", email);
                     params.put("password", password);
                     return params;
                 }
-            };*/
+            };*//*
                 rQueue = Volley.newRequestQueue(Login.this);
                 rQueue.add(stringRequest);
             }
-        }
+        }*/
     }
 
     private void parseData(String response){
